@@ -1,0 +1,6 @@
+include: "/templates/defaults.yml"
+
+my-job:
+  services: !reference [.postgres, services]
+  script:
+    - echo foo
